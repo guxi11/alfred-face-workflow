@@ -23,7 +23,8 @@ files = paths.inject([]) do |files, path|
   end
 end
 
-files.keep_if { |file| match?(File.basename(file), query) }
+# not only match in basename (File.basename(file)), but also the path.
+files.keep_if { |file| match?(file, query) }
 
 items = files.uniq.sort.map do |file|
   basename = File.basename(file)

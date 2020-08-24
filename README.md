@@ -1,8 +1,6 @@
-# Alfred Workflows
+# Alfred Face Workflow
 
-There are some workflows for alfred written by myself, in order to improve the work efficiency, for fun at the same time.
-
-# Initialize
+## Initialize
 
 You can download them from directory `workflows`, double click the workflow then it will be imported into alfred automatically.
 
@@ -13,8 +11,6 @@ In the meanwhile, you can execute the shell script named `initialize.sh`, it wil
 ```
 
 I recommend the second way, because you can not only use the workflow, but also manage your code if you want to modify them.
-
-# Workflow List
 
 ## Quick Face
 
@@ -32,58 +28,3 @@ Usage: `face-add example-folder-or-iamge-names`
 
 If you use this workflow for the first time, it's necessary for you to add some images paths, it's a file-filter which built in by workflow, choose folders or image files, after that you can search them. You can also modify the file named `paths` in the working directory directly.
 
-## iTerm.scpt
-
-When you are using the combination of "iTerm + oh-my-zsh + tmux", maybe you want to replace the alfred's default terminal with "iTerm", choose the custom option, and then copy the content of file named "iTerm.scpt".
-
-It's written by applescript, you can learn applescript's grammer and refer to the [document of "iTerm"](http://www.iterm2.com/documentation-scripting.html)
-
-## Youdao Translator
-
-> Use youdao api to translate
-
-### Prepare
-
-If you want to use this workflow to transalte quickly, you should register and apply for a service at youdao, [http://ai.youdao.com/index.s](http://ai.youdao.com/index.s), and then copy `config.template.json` to `config.json`, modify with your own `appKey`、`secretKey`.
-
-### Usage
-
-`yd hello` or `tr hello`
-
-Choose the item which you want, click `enter` to copy to your clipboard.
-
-## Launcher
-
-> Open some files by certain program in alfred
-
-Alfred provides a `open` command to open different files by macos softwares, such as use `Finder` to open folder and files, or `Preview` to open pdf.
-
-But sometimes we want to open by certain programs, this workflow may help you.
-
-In fact, it is achieved by a `file filter` and single shell command.
-
-### Vimpdf
-
-`vimpdf example.pdf`
-
-Preview pdf files in vim mode, you should download the executable program named `Cocoa-mupdf`, you can find it in [https://github.com/dean-wong/Cocoa-mupdf](https://github.com/dean-wong/Cocoa-mupdf).
-
-### SublimeText
-
-`st alfred-workflows`
-
-Open project in sublime text by alfred, at first, you should install sublime text on your machine, and then it will provide a command line `subl`, you can use it in a terminal. I just move it into a workflow.
-
-`sta alfred-workflows`
-
-Append file/folder to current sublime text window.
-
-### VSCode
-
-`code alfred-workflows`
-
-Open project in vscode by alfred, install vscode, and `command + shift + p` execute `Install 'code' command in path`, then you can use this command in your terminal, but use it through alfred will be more speedy.
-
-### File Actions
-
-When you have a lot of files or directories with the same name, maybe you want to find it within certain path, you can type the excepted path in alfred, click `Right Arrow` to show `File Actions`, just choose them to run scripts with the path, such as `sublime text` which is provided by `Launcher`.

@@ -34,7 +34,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>xin</string>
+	<string>Guxi11</string>
 	<key>description</key>
 	<string>use alfred to search expressions</string>
 	<key>disabled</key>
@@ -48,6 +48,12 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -84,7 +90,7 @@
 			<key>uid</key>
 			<string>D6463E53-9406-45D5-9D44-C45D8FB1224F</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -114,6 +120,8 @@
 			<dict>
 				<key>anchorfields</key>
 				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>daterange</key>
@@ -161,10 +169,14 @@
 				<false/>
 				<key>keyword</key>
 				<string>face-add</string>
+				<key>limit</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>scopes</key>
 				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
 				<key>subtext</key>
 				<string>a file filter for quck-face to add paths</string>
 				<key>title</key>
@@ -179,7 +191,7 @@
 			<key>uid</key>
 			<string>BDABFC24-36B8-4E90-A586-6D3F5CBC6248</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -219,9 +231,9 @@
 		<key>48EFF0F5-AFFC-43A6-B613-47F583892F06</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>455</integer>
 			<key>ypos</key>
-			<integer>250</integer>
+			<integer>125</integer>
 		</dict>
 		<key>BDABFC24-36B8-4E90-A586-6D3F5CBC6248</key>
 		<dict>
@@ -233,11 +245,15 @@
 		<key>D6463E53-9406-45D5-9D44-C45D8FB1224F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>155</integer>
 			<key>ypos</key>
-			<integer>250</integer>
+			<integer>120</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
