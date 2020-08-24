@@ -31,6 +31,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>063AB86B-4CCE-4034-A87E-DED0B1DBA873</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -43,6 +53,29 @@
 	<string>Quick Face</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>osascript copy.scpt {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>48EFF0F5-AFFC-43A6-B613-47F583892F06</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -59,7 +92,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>face</string>
+				<string>fa</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -95,25 +128,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>osascript copy.scpt {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>path</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>48EFF0F5-AFFC-43A6-B613-47F583892F06</string>
+			<string>063AB86B-4CCE-4034-A87E-DED0B1DBA873</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -221,33 +244,40 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>063AB86B-4CCE-4034-A87E-DED0B1DBA873</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
 		<key>08503AEB-14EF-4778-BC8A-43FD749CF3D7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>405</integer>
 		</dict>
 		<key>48EFF0F5-AFFC-43A6-B613-47F583892F06</key>
 		<dict>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>125</integer>
+			<integer>75</integer>
 		</dict>
 		<key>BDABFC24-36B8-4E90-A586-6D3F5CBC6248</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>195</integer>
 			<key>ypos</key>
-			<integer>410</integer>
+			<integer>405</integer>
 		</dict>
 		<key>D6463E53-9406-45D5-9D44-C45D8FB1224F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>155</integer>
+			<integer>190</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>145</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
