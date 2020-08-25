@@ -5,6 +5,7 @@ def item_xml(options = {})
     <subtitle>#{options[:subtitle]}</subtitle>
     <subtitle mod="cmd">Show in Finder</subtitle>
     <icon>#{options[:icon]}</icon>
+    <quicklookurl>#{options[:icon]}</quicklookurl>
   </item>
   ITEM
 end
