@@ -3,6 +3,7 @@ def item_xml(options = {})
   <item arg="#{options[:arg]}" uid="#{options[:uid]}">
     <title>#{options[:title]}</title>
     <subtitle>#{options[:subtitle]}</subtitle>
+    <subtitle mod="cmd">Show in Finder</subtitle>
     <icon>#{options[:icon]}</icon>
   </item>
   ITEM
