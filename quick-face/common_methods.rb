@@ -18,3 +18,16 @@ end
 def match?(word, query)
   word.match(/#{query.gsub(/\\ /, '').split('').join('.*')}/i)
 end
+
+def get_relative_path(roots, file)
+  relative_path = file.clone
+
+  for path in roots
+    text = path
+    if relative_path.include? path
+      relative_path.slice! path
+    end
+  end
+
+  return relative_path
+end
