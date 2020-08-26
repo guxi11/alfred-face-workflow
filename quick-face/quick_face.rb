@@ -10,7 +10,7 @@ end
 
 if paths.size == 0
   output({
-    title: 'face-add example-fodlers-or-images',
+    title: 'fa-add example-fodlers-or-images',
     subtitle: 'Please add image paths for searching'
   })
 end
