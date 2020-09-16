@@ -6,6 +6,8 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
+		<key>93F6266E-6A6E-4750-AFA1-DFE7A8F06139</key>
+		<array/>
 		<key>BDABFC24-36B8-4E90-A586-6D3F5CBC6248</key>
 		<array>
 			<dict>
@@ -36,6 +38,19 @@
 				<string>063AB86B-4CCE-4034-A87E-DED0B1DBA873</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F66D3338-A208-4C4B-A9BB-46F7B23FACF4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>93F6266E-6A6E-4750-AFA1-DFE7A8F06139</string>
+				<key>modifiers</key>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -239,6 +254,50 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>fa-ig</string>
+				<key>subtext</key>
+				<string>run image2gif script</string>
+				<key>text</key>
+				<string>Parse Images into GIF Format</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F66D3338-A208-4C4B-A9BB-46F7B23FACF4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>osascript parse_image_format.scpt $(pwd)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>image2gif.py</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>93F6266E-6A6E-4750-AFA1-DFE7A8F06139</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -247,37 +306,51 @@
 		<key>063AB86B-4CCE-4034-A87E-DED0B1DBA873</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>410</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>195</integer>
 		</dict>
 		<key>08503AEB-14EF-4778-BC8A-43FD749CF3D7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>340</integer>
 		</dict>
 		<key>48EFF0F5-AFFC-43A6-B613-47F583892F06</key>
 		<dict>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>405</integer>
 			<key>ypos</key>
-			<integer>75</integer>
+			<integer>45</integer>
+		</dict>
+		<key>93F6266E-6A6E-4750-AFA1-DFE7A8F06139</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>495</integer>
 		</dict>
 		<key>BDABFC24-36B8-4E90-A586-6D3F5CBC6248</key>
 		<dict>
 			<key>xpos</key>
-			<integer>195</integer>
+			<integer>150</integer>
 			<key>ypos</key>
-			<integer>405</integer>
+			<integer>340</integer>
 		</dict>
 		<key>D6463E53-9406-45D5-9D44-C45D8FB1224F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>140</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>115</integer>
+		</dict>
+		<key>F66D3338-A208-4C4B-A9BB-46F7B23FACF4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>495</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>

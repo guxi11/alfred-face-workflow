@@ -21,10 +21,14 @@ The second way is recommended, because you can not only use the workflow, but al
 Keyword `fa` : search through paths.
 
 * `Enter`: Copy to clipboard
-* `Command + Enter`: Show in Finder
+* `Command + Enter`: Reveal in Finder
 * `Shift`: Quicklook
 
 ### Add Path
 
 Keyword `fa-add` : add path into paths.
+
+### Parse Images
+
+Keyword `fa-ig` : parse images to gif, for images in gif format will be treated as stickers in wechat. This requires python3.5+ and imageio.
 
